@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class EmployeeController extends Controller
 {
       function getdata(){
-        return["name"=> "Amir","email"=>"amir@gmail.com",
-
+                return["name"=> "Amir","email"=>"amir@gmail.com",
                 "address"=>"Dhaka"];
+        }
+
 }
