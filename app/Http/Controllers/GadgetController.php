@@ -23,4 +23,20 @@ class GadgetController extends Controller
 
 
     }
+    public function update(Request $request){
+      $data  =Gadget::find($re->$id);
+      $data->name= $request->name;
+      $data->category= $request->category;
+      $data->quantity= $request->quantity;
+      $result =$data->update();
+      if($result){
+
+        return ["Result" => "Data Updated"];
+      }
+      else{
+        return ["Result"=> "Data couldnt save"];
+      }
+
+
+    }
 }

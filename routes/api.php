@@ -22,3 +22,5 @@ Route::get("productList/{id?}",[ProductController::class,'products']);
 
 
 Route::post("store",[GadgetController::class,'store']);
+
+Route::put("update",[GadgetController::class,'update']);
